@@ -9,7 +9,8 @@
 body {
     font-family: 'Lato', sans-serif, Courier, monospace;
     /**background-image: url(https://img.freepik.com/free-vector/turing-pattern-organic-lines-texture-background-vector-illustration_1017-38376.jpg?w=900&t=st=1674418785~exp=1674419385~hmac=62e087d0f42fe3f7aa6866f43798067757a0663902c37e52b5741992cec34298);*/
-    background-color: rgb(99, 171, 150);
+    background-colo: rgb(111, 133, 126);
+    
 }
 
 
@@ -17,13 +18,15 @@ body {
 .container {
     display: grid;
     align-items: center;
-    grid-template-columns: 4fr 2fr 1fr;
+    grid-template-columns: 4fr 4fr 0fr;
     column-gap: 5px;
     padding: 70px;
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     margin-bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
 }
 
 img {
@@ -31,14 +34,25 @@ img {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 0 35px rgb(54, 54, 54);
-    border: 10px solid rgb(99, 171, 150);
+    box-shado: 0 0 35px rgb(54, 54, 54);
+    border: 1px solid rgb(158, 158, 158);
     margin-left: 125px;
-    
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 .textoDescripcion  {
     text-align: center;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.textoDescripcion h1 {
+    font-size: 40px;
 }
 
 .textoDescripcion h2 {
@@ -162,15 +176,17 @@ header .floatRight {
     background-color: rgb(255, 255, 255);
     color: rgb(49, 49, 49);
     text-align: center;
+    text-decoration: none;
+    
     
 }
 
 .navbar a:hover {
-    border: 3px sold;
-    border-color: rgb(0, 0, 0);
-    background-color: rgb(219, 218, 218);
+    background-color: rgb(255, 255, 255);
     font-size: 20px;
-    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
 }
 
 .navbar a {
@@ -180,6 +196,9 @@ header .floatRight {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    text-decoration: none;
+    border: 0px solid rgb(99, 171, 150);
+    transition: box-shadow .3s;
 
 }
 
@@ -187,6 +206,7 @@ header .floatRight {
     border-width: 5px solid;
     color: rgb(49, 49, 49);
     margin-bottom: 0;
+    text-decoration: none;
 }
 */
 /*
@@ -199,6 +219,10 @@ header .floatRight {
 */
 
 .seccion {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0fr 0fr 1fr;
+    column-gap: 5px;
     margin: 0;
     padding: 70px;
     text-align: center;
@@ -212,23 +236,30 @@ header .floatRight {
     font-size: 25px;
     border-top-left-radius: 50px;
     
+    
 }
 
 .sobreMi1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 0fr;
+    column-gap: 5px;
     margin-top: 0;
     margin-bottom: 0;
     background-color: rgb(255, 255, 255);
     padding: 70px;
     text-align: center;
+    overflow: auto;
+    font-family: 'Lato', Courier, monospace;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
 
-.conocimientos {
+.webDesign {
     margin-top: 0;
     margin-bottom: 0px;
     padding: 70px;
-    text-align: center;
-    background-color: aliceblue;
+    text-align: ;
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-weight: 300;
@@ -236,15 +267,24 @@ header .floatRight {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    overflow: hidden;
+    border: 1px solid rgb(99, 171, 150);
+    transition: box-shadow .3s;
+}
+
+.webDesign:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 0px;
+}
+
+.webDesignIconoTexto {
+    font-family: 'Lato', Courier, monospace;
+    font-weight: 400;
 }
 
 .experiencia {
-    margin-top: 0;
+    margin-top: 0px;
     margin-bottom: 0;
     padding: 70px;
-    text-align: 'center';
-    background-color: aliceblue;
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-weight: 300;
@@ -252,23 +292,40 @@ header .floatRight {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    overflow: auto;
+    border: 1px solid rgb(99, 171, 150);
+    transition: box-shadow .3s;
 
+}
+
+.experiencia:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 0px;
+}
+
+.experienciaIconoTexto {
+    font-family: 'Lato', Courier, monospace;
+    font-weight: 400;
 }
 
 .footer {
     padding: 70px;
-    text-align: center;
     background-color: rgb(255, 255, 255);
-    color: rgb(46, 143, 114);
+    color: rgb(0, 0, 0);
     font-family: 'Lato',sans-serif, Courier, monospace;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     margin-top: 0;
     font-size: 25px;
     border: 0px solid;
-    border-top-color: rgb(73, 131, 114)
+    border-top-color: rgb(73, 131, 114);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
+.logoInstagram {
+    float: left;
+}
+
+
 /**
 @media  (max-width: 600px) {
     .boxTexto {
