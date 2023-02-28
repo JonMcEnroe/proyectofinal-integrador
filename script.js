@@ -1,5 +1,4 @@
 
-
 function myFunction() {
   document.getElementById("menuColapsable").classList.toggle("show");
 }
