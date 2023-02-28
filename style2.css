@@ -4,6 +4,7 @@
     margin: 10px;
     padding: 0px;
     font-family: 'Lato', sans-serif Courier, monospace;
+    scroll-behavior: smooth;
 }
 
 
@@ -168,9 +169,7 @@ img {
 }
 
 .sobreMi1 {
-    display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 0fr;
     column-gap: 5px;
     margin-top: 0;
     margin-bottom: 0;
@@ -182,9 +181,53 @@ img {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.portfolioContenido {
+    display: flexbox;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 0fr;
+    column-gap: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 70px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.miPortfolio {
+    padding: 50px;
+    font-weight: 600;
+}
+
+.imagenProyecto:hover {
+    transform: scale(1.5);
+    transition: .5s ease;
+}
+
+.formulario {
+    display: flexbox;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 0fr;
+    column-gap: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 70px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
 .webDesign {
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding: 70px;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -206,12 +249,12 @@ img {
 
 .webDesignIconoTexto {
     font-family: 'Lato', Courier, monospace;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .experiencia {
     margin-top: 0px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding: 70px;
     color: rgb(0, 0, 0);
     font-size: 25px;
@@ -232,7 +275,37 @@ img {
 
 .experienciaIconoTexto {
     font-family: 'Lato', Courier, monospace;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+.informacionPersonal {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 70px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid rgb(99, 171, 150);
+    transition: box-shadow .3s;
+    overflow: hidden;
+}
+
+.informacionPersonal:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 0px;
+}
+
+.informacionPersonalIconoTexto {
+    font-family: 'Lato', Courier, monospace;
+    font-weight: 600;
+}
+
+.bold {
+ font-weight: 400;
 }
 
 .footer {
@@ -241,14 +314,13 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 5px;
     padding: 70px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-family: 'Lato',sans-serif, Courier, monospace;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     margin-top: 0;
     font-size: 25px;
     border: 0px solid;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-top-color: rgb(73, 131, 114);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -257,22 +329,27 @@ img {
     color: rgb(0, 0, 0);
 }
 
-.logoInstagram {
-    display: inline-block;
+.footer2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding: 70px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 25px;
+    border: 0px solid;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-top-color: rgb(73, 131, 114);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.logoGithub {
-    display: inline-block;   
+.footer2 :visited {
+    color: rgb(0, 0, 0);
 }
-
-.logolinkedIn {
-    display: inline-block;
-}
-
-.logoTwitter {
-    display: inline-block;  
-}
-
 
 @media screen and (max-width: 600px) {
     .navbar a.icon {
@@ -294,30 +371,6 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .prueba {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .prueba2 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .prueba3 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .prueba4 {
-        display: none;
-    }
-}
-
 @media  (max-width: 600px) {
     .boxTexto {
       width: 100%;
@@ -328,14 +381,6 @@ img {
     .fotoPerfil {
     text-align: center;
     align-content: center; 
-    }
-}
-
-@media (max-width: 500px) {
-    .conocimientos {
-        text-align: center;
-        margin: auto;
-        padding: auto;
     }
 }
 
@@ -366,6 +411,13 @@ img {
 
 @media screen and (max-width: 600px) {
     .footer {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer2 {
         display: block;
         text-align: center;
     }
