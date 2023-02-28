@@ -208,24 +208,8 @@ img {
     transition: .5s ease;
 }
 
-.formulario {
-    display: flexbox;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 0fr;
-    column-gap: 5px;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: rgb(255, 255, 255);
-    padding: 70px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
 
-.webDesign {
+.habilidades {
     margin-top: 0;
     margin-bottom: 10px;
     padding: 70px;
@@ -242,14 +226,48 @@ img {
     overflow: hidden;
 }
 
-.webDesign:hover {
+.habilidades:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border: 0px;
 }
 
-.webDesignIconoTexto {
+.habilidadesIconoTexto {
     font-family: 'Lato', Courier, monospace;
     font-weight: 600;
+}
+
+.barraHabilidades {
+    width: 100%;
+    background-color: rgb(148, 148, 148);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.habilidad {
+    text-align: right;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.html {
+    width: 90%;
+    background-color: rgb(111, 133, 126);
+}
+
+.css {
+    width: 90%;
+    background-color: rgb(111, 133, 126);
+}
+
+.js {
+    width: 70%;
+    background-color: rgb(111, 133, 126);
 }
 
 .experiencia {
@@ -302,6 +320,91 @@ img {
 .informacionPersonalIconoTexto {
     font-family: 'Lato', Courier, monospace;
     font-weight: 600;
+}
+
+.containerFormulario {
+    
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.formulario {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid rgb(99, 171, 150);
+    transition: box-shadow .3s;
+    overflow: hidden;
+}
+
+.formulario:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 0px;
+}
+
+input[type=text] {
+    width: 50%;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgb(99, 171, 150);
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+
+input[type=email] {
+    width: 50%;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgb(99, 171, 150);
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+
+textarea {
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid rgb(99, 171, 150);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input[type=submit] {
+    width: 25%;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgb(99, 171, 150);
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+
+input[type=submit]:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 0px;
 }
 
 .bold {
@@ -430,7 +533,7 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-    .webDesign {
+    .habilidades {
         margin-bottom: 10px;
     }
 }
